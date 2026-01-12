@@ -1,0 +1,91 @@
+/* RESET: Removes default spacing so the split takes full screen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI',Arial, Helvetica;
+    background-color: #004d40; /* Fallback color */
+    overflow: hidden; /* Prevents scrollbars if image is slightly too big */
+}
+#my-image {
+    float: right;        /* Pushes box to left */
+    width: 50%;         /* Takes exactly half width */
+    height: 100vh;      /* 100% of the Viewport Height (Full Screen) */
+    background-color: #000;
+}
+
+#my-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensures image covers the area without stretching */
+}
+
+/* --- RIGHT SIDE (Content) --- */
+#content {
+    float: left;       /* Pushes box to right */
+    width: 50%;         /* Takes other half */
+    height: 100vh;
+    background-color: #1b262c; /* Theme: Deep Dark Blue/Grey */
+    color: #ffffff;     /* White text */
+    position: relative; /* Needed to help position content if we wanted to */
+}
+
+/* --- NAVIGATION --- */
+.navbar {
+    padding: 20px ;
+    text-align: right;
+    background-color:#004d40;
+     border-bottom: 3px solid #d4af37 /* Pushes menu items to the right */
+}
+.navbar li {
+    display: inline-block; /* Makes list items sit side-by-side */
+    margin-left: 20px;
+}
+
+.navbar a {
+    text-decoration:none;
+    color: #fff; /* Light Blue-Grey */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #3282b8; /* Hover color */
+}
+/* --- HERO CONTENT (The Text) --- */
+.homepage {
+    /* Since we can't use Flexbox to center, we use padding-top */
+    padding-top: 15%; 
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.homepage h1 {
+    font-family: Verdana,sans-serif;
+    font-size: 60px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* The Horizontal Line */
+.homepage hr {
+    border: 0;
+    height: 2px;
+    background: #3282b8; /* Blue accent line */
+    width: 50%;        /* Short line like the design */
+    margin-bottom: 30px;
+    text-align: left;    /* Ensures line starts at left */
+    display: block;      /* Ensures it behaves as a block */
+}
+
+#intro p {
+    font-size: 18px;
+    font-family:Verdana,sans-serif;
+    line-height: 1.6;
+    color: #FAEB92;      /* Slightly dimmer white for reading */
+    max-width: 500px;    /* Prevents text from stretching too wide */
+    margin-bottom: 30px;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* General Reset */
+        body {
+            font-family:  Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #5be4cb; /* Theme Dark Background */ /* Theme Dark Background */
+            color: teal;
+            text-align: center;
+        }
+
+        /* Navigation Bar */
+       nav {
+            background-color: #004d40; /* Teal */
+            padding: 10px;
+            text-align: right;
+            border-bottom: 3px solid #d4af37; /* Gold Border */
+        }
+        nav li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #3282b8;
+        }
+
+        h1 {
+            margin-top: 50px;
+            color: #FF3C00;  /* Gold */
+        }
+
+        .intro-text {
+            font-size: 20px;
+            margin-bottom: 40px;
+            color: #000; /* Light Blue-Grey */
+            font-style: italic;
+        }
+
+        /* Contact Box Container */
+        .contact-container {
+            width: 550px; /* Slightly wider to fit icons */
+            margin: 0 auto; 
+            background-color: teal;
+            border: 3px solid #333;
+            padding: 40px;
+            text-align: left;
+        }
+
+        /* Individual Contact Rows */
+        .contact-row {
+            margin-bottom: 25px;
+            font-size: 18px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #333;
+        }
+        /* ICON STYLING */
+        .icon {
+            color: #d4af37; /* Gold Icons */
+            font-size: 24px; /* Make them visible */
+            width: 40px; /* Fixed width to align text perfectly */
+            text-align: center;
+            vertical-align: middle;
+            margin-right: 15px;
+        }
+
+        /* Link Styling */
+        .contact-link {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+            vertical-align: middle;
+            font-size: 18px;
+        }
+
+        .contact-link:hover {
+            color: #d4af37;
+            text-decoration: underline;
+        }
+
+    </style>
+    </head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact details</a></li>
+            <li><a href="resume.html">My Resume</a></li>
+        </ul>
+    </nav>
+
+    <h1>Get In Touch</h1>
+    
+    <p class="intro-text">"I would love to connect and work with like-minded people."</p>
+
+    <div class="contact-container">
+        
+        <div class="contact-row">
+            <i class="fa-solid fa-graduation-cap icon"></i>
+            <a href="mailto:tanay.anandmohta2024@vitstudent.ac.in" class="contact-link">
+                tanay.anandmohta2024@vitstudent.ac.in
+            </a>
+        </div>
+
+        <div class="contact-row">
+            <i class="fa-solid fa-envelope icon"></i>
+            <a href="mailto:tanaymohta@gmail.com" class="contact-link">
+                tanaymohta@gmail.com
+            </a>
+        </div>
+
+        <div class="contact-row">
+            <i class="fa-solid fa-phone icon"></i>
+            <a href="tel:+918433946865" class="contact-link">
+                +91 8433946865
+            </a>
+        </div>
+
+        <div class="contact-row">
+            <i class="fa-brands fa-linkedin icon"></i>
+            <a href="https://www.linkedin.com/in/tanay-mohta-68385332b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="contact-link">
+                LinkedIn Profile
+            </a>
+        </div>
+
+        <div class="contact-row">
+            <i class="fa-brands fa-github icon"></i>
+            <a href="https://github.com/Tanay-M" target="_blank" class="contact-link">
+                github.com/Tanay-M
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>

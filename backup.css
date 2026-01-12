@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:  Verdana, sans-serif;
+    color: #FAEB92; /* White text for contrast */
+    background-image: url('https://img.freepik.com/free-photo/flat-lay-workstation-with-copy-space-laptop_23-2148430879.jpg?semt=ais_hybrid&w=740&q=80');
+    background-color: #1b262c; /* Fallback color if image doesn't load */
+    background-size:auto; /* Keeps background still while you scroll */
+}
+.navbar {
+    background-color:#0C7779; /* Dark Teal */
+    padding: 20px;
+    text-align: right;
+    border-bottom: 3px solid #d4af37; /* Gold Border */
+}
+.navbar li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navbar a {
+    text-decoration:none;
+    color: #fff;
+    font-weight: bold;
+}
+/* --- MAIN CONTAINER --- */
+.container {
+    width: 100%;       /* Keeps content in middle of screen */
+    margin: none auto; /* Centers the container */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black box */
+    padding: 40px;
+    border:none;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    color: #FE7F2D; /* Gold Title */
+}
+h2 {
+    color: #FE7F2D; /* Light Teal for subheadings */
+    margin-bottom: 15px;
+}
+p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+/* --- IMAGE FLOATING LOGIC (The Core Requirement) --- */
+
+/* Float Left: Image sits left, text wraps right */
+.mypic {
+    float: left;
+    margin-right: 30px; /* Space between image and text */
+    margin-bottom: 30px;
+}
+
+/* Styling the images to look nice */
+.mypic {
+    border: 4px solid #d4af37; /* Gold border for user pics */
+    border-radius: 100px; /* Circular images */
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.hobby-pic1 {
+    border: 4px solid #d4af37 ; /* Teal border for hobby pics */
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+}
+.hobby-pic-left{
+    border: 4px solid #d4af37;
+    width:200px;
+    height: 200px;
+    object-fit:cover;
+    float: left;
+    margin-right:30px;
+    margin-bottom:30px;
+}
+.hobby-list li {
+    margin-bottom: 30px;
+    font-size: 18px;
+    list-style-type: disc; /* Square bullet points */
+}
+.clear {
+    clear: both;
+}
+<div class="cert-box">
+            <span class="cert-title">Python for Data Science</span>
+            <span class="cert-issuer">IBM Certified Course</span>
+        </div>
+
+        <div class="cert-box">
+            <span class="cert-title">Machine Learning Specialization</span>
+            <span class="cert-issuer">Google Udacity</span>
+        </div>
+
+        <div class="cert-box">
+            <span class="cert-title">Advanced SQL for Data Analysis</span>
+            <span class="cert-issuer">Google Udacity</span>
+        </div>
+
+        <div class="cert-box">
+            <span class="cert-title">Big Data Foundations – Level 1</span>
+            <span class="cert-issuer">Princeton University</span>
+        </div>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Tech Blog</title>
+    
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9; 
+            color: #333;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #004d40;
+            padding: 20px;
+            text-align: right;
+            border-bottom: 3px solid #d4af37;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #e0f2f1;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        .container {
+            width: 70%;
+            margin: 40px auto;
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+        }
+
+        h1 {
+            color: #004d40;
+            text-align: center;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+
+        .blog-post {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+
+        .blog-post h2 {
+            color: teal;
+            margin-bottom: 10px;
+        }
+
+        .date {
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .video-container {
+            text-align: center;
+            margin: 30px 0;
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>My Latest Updates</h1>
+        <div class="blog-post">
+            <h2>Hosting on Github</h2>
+            <div class="video-container">
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="task2video.mp4" 
+                    title="YouTube video player" 
+                    allow="accelerometer; autoplay;" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
